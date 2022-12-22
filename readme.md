@@ -20,4 +20,4 @@ Application table
 Assume in our e-commerce applications database that we have a user table to store user attributes.
 
 ## Setup for MS SQL
-[I'm a relative reference to a repository file](../db_samples.sql)
+[db_samples.sql](db_samples.sql)
