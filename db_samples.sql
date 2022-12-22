@@ -8,10 +8,10 @@ CREATE TABLE user_dim (
     last_name VARCHAR(10),
     address VARCHAR(100),
     zipcode VARCHAR(10),
-    created_datetime TIMESTAMP,
-    updated_datetime TIMESTAMP,
-    row_effective_datetime TIMESTAMP,
-    row_expiration_datetime TIMESTAMP,
+    created_datetime DATETIME,
+    updated_datetime DATETIME,
+    row_effective_datetime DATETIME,
+    row_expiration_datetime DATETIME,
     current_row_indicator VARCHAR(10)
 );
 INSERT INTO user_dim (
@@ -60,7 +60,7 @@ CREATE TABLE items_purchased (
     user_id VARCHAR(40),
     item_id VARCHAR(40),
     item_cost decimal(10, 2),
-    purchased_datetime TIMESTAMP -- and other fact information
+    purchased_datetime DATETIME -- and other fact information
 );
 INSERT INTO items_purchased (
         item_purchased_id,

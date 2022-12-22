@@ -7,10 +7,6 @@ If you are using a data warehouse, you would have heard of fact and dimension ta
 
 For example, in an e-commerce website, a fact table would contain information about orders, such as when the order was placed, the items in that order, who placed that order, etc. The dimension tables would be an item table (containing item id, item price, size, etc) and an user table (containing user id, user name, user address etc).
 
-If you are wondering 
-* how can I store my table’s history over time ?
-* how can I join a fact table and an SCD2 dimension table ?
-
 ## What is an SCD2 table and why use it?
 The dimensional data in a data warehouse are usually derived from an application’s database. There are 7 common types of ways to model and store dimensional data in a data warehouse. In this post, we will look exclusively at `Type 2: Add New Row.`
 
@@ -20,4 +16,17 @@ Application table
 Assume in our e-commerce applications database that we have a user table to store user attributes.
 
 ## Setup for MS SQL
+Let’s create a simple `user_dim` table and an `items_purchased` fact table in our data warehouse.
+
 [db_samples.sql](db_samples.sql)
+Let’s create a simple `user_dim` table and an `items_purchased` fact table in our data warehouse.
+
+## Joining fact and SCD2 tables
+Let’s say our data analysts wants to answer questions like
+
+* I want to see the distribution of our high spending users by month, year and zip code(at time of purchase)
+* I want to see the high spending users first name, last name, zip code along with how long they lived at each zip code(duration_of_stay). If they are currently living at a zip code then the duration_of_stay should be Null.
+
+**High spending** user is defined as any user who has spent at least 1000$ on our website.
+
+We can write a query to answer question 1, as shown here:
