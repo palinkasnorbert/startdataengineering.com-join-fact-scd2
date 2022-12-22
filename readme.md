@@ -19,6 +19,7 @@ Assume in our e-commerce applications database that we have a user table to stor
 Let’s create a simple `user_dim` table and an `items_purchased` fact table in our data warehouse.
 
 [db_samples.sql](db_samples.sql)
+
 Let’s create a simple `user_dim` table and an `items_purchased` fact table in our data warehouse.
 
 ## Joining fact and SCD2 tables
@@ -30,3 +31,5 @@ Let’s say our data analysts wants to answer questions like
 **High spending** user is defined as any user who has spent at least 1000$ on our website.
 
 We can write a query to answer question 1, as shown here:
+
+[query-q1.sql](query-q1.sql)
