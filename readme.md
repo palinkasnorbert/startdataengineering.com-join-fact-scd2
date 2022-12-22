@@ -18,7 +18,7 @@ Assume in our e-commerce applications database that we have a user table to stor
 ## Setup for MS SQL
 Let’s create a simple `user_dim` table and an `items_purchased` fact table in our data warehouse.
 
-[db_samples.sql](db_samples.sql)
+[MS SQL Query from repo, named as db_samples.sql](db_samples.sql)
 
 Let’s create a simple `user_dim` table and an `items_purchased` fact table in our data warehouse.
 
@@ -32,4 +32,4 @@ Let’s say our data analysts wants to answer questions like
 
 We can write a query to answer question 1, as shown here:
 
-[query-q1.sql](query-q1.sql)
+[MS SQL Query from repo, named as query-q1.sql](query-q1.sql)
