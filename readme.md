@@ -33,3 +33,5 @@ Let’s say our data analysts wants to answer questions like
 We can write a query to answer question 1, as shown here:
 
 [MS SQL Query from repo, named as query-q1.sql](query-q1.sql)
+
+**edit test
