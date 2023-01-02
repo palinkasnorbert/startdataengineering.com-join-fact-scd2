@@ -1,3 +1,7 @@
+/*I want to see the distribution of our 
+high spending users by month, 
+year and zip code(at time of purchase)*/
+
 WITH high_spenders AS (
     SELECT user_id
     FROM items_purchased
